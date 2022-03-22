@@ -1,5 +1,5 @@
-CREATE DATABASE QuanLySinhVien21;
-USE QuanLySinhVien21;
+CREATE DATABASE QuanLySinhVien;
+USE QuanLySinhVien;
 CREATE TABLE Class
 (
     ClassID   INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -62,9 +62,4 @@ VALUES (1, 1, 8, 1),
        (1, 2, 10, 2),
        (2, 1, 12, 1);
 
-SELECT  * FROM Student;
-SELECT  * FROM Student WHERE StudentName LIKE 'H%';
-SELECT  * FROM Class WHERE StartDate LIKE '%12%';
-UPDATE Student SET ClassId = 2 WHERE StudentName = 'Hung';
-SELECT StudentName, SubName, Mark FROM Student JOIN Subject S on Student.Status = S.Status
-JOIN Mark M on S.SubId = M.SubId ORDER BY Mark DESC ;
+
